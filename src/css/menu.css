@@ -1,0 +1,228 @@
+.header {
+    background-color: rgba(30, 31, 34, 1);
+    margin-bottom: 100px;
+}
+
+
+.navigation-bar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation-bar:hover {
+     height: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+.link a {
+    color: rgba(227, 147, 157, 1);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.link:hover {
+    transform: scale(1.5);
+    transition: .5s;
+    color: rgba(227, 147, 157, 1);
+}
+
+
+.link a {
+    color: rgba(227, 147, 157, 1);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+/*
+.profil-user {
+    width: 60px;
+    height: 60px;
+    border: solid 3px #FFF;
+    opacity: .3;
+    animation-duration: 7s;
+    animation-name: viewprofil;
+}
+
+
+ @keyframes viewprofil {
+    0% {
+        width: 60px;
+        height: 60px;
+        border-radius: 10%;
+        border: solid 1px #FFF;
+        opacity: .7;
+        transform: translateX(-159px);
+    }
+    16.7% {
+        width: 60px;
+        height: 60px;
+        border-radius: 66%;
+        border: solid 2px yellow;
+        opacity: 1;
+        transform: translateX(+159px);
+    }
+    33.4% {
+        width: 60px;
+        height: 60px;
+        border-radius:  50%;
+        border: solid 3px orange;
+        opacity: 1;
+        transform: translateX(-159px);
+    }
+    50% {
+        width: 60px;
+        height: 60px;
+        border-radius: 33%;
+        border: solid 3px red;
+        opacity: 1;
+        transform: translateX(+159px);
+    }
+     66% {
+        width: 60px;
+        height: 60px;
+        border-radius: 16%;
+        border: solid 3px purple;
+        opacity: 1;
+        transform: translateX(-159px);
+     }
+      100% {
+         width: 60px;
+         height: 60px;
+         border-radius: 10%;
+         border: solid 3px pink;
+         opacity: 1;
+         transform: translateX(+159px);
+      }
+ }
+
+.profil-user {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 10%;
+    border: solid 3px rgba(227,147, 157, 1);
+    opacity: 1;
+    transform: translateX(+159px) scale(.9);
+    transition: .5s;
+}
+
+*/
+
+.profil-user {
+    width: 60px;
+    height: 60px;
+    border: solid 3px #FFF;
+    opacity: 0.8;
+    animation: viewprofil 5s ease-in-out infinite alternate;
+}
+
+
+
+/*********************************************/
+/*********************************************/
+/*********************************************/
+/**
+    Animation avec un effet de rotation + une fin après un décompte -> Javascript.
+    **/
+@keyframes viewprofil {
+    0% {
+        transform: rotate(0deg) scale(0.9);
+        border-radius: 10%;
+        border-color: #FFF;
+        opacity: 0.7;
+    }
+    10% {
+        transform: rotate(180deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        transform: rotate(360deg) translateX(-150px);
+        border-radius: 50%;
+        border-color: yellow;
+    }
+    40% {
+        transform: translateX(150px) scale(1.1);
+        border-radius: 40%;
+        border-color: orange;
+    }
+    60% {
+        transform: translateX(-120px) scale(1);
+        border-radius: 30%;
+        border-color: red;
+    }
+    80% {
+        transform: translateX(120px) scale(1.1);
+        border-radius: 20%;
+        border-color: purple;
+    }
+    100% {
+        transform: translateX(-150px) scale(0.9);
+        border-radius: 10%;
+        border-color: pink;
+    }
+}
+
+/**
+    WARNING - ici c'est un ID
+#timer {
+    font-size: 2em;
+    color: #FFF;
+}
+    **/
+
+#timer {
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/**
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #FFF;
+    transform: scale(1.1);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+    **/
+
+a {
+    display: inline-block; /* Nécessaire pour l'animation */
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    animation: pulse-links 3s infinite;
+}
+
+a:hover {
+    transform: scale(1.2);
+    color: #ff5733;
+    animation: none; /* Stop l'animation au survol */
+}
+
+@keyframes pulse-links {
+    0% { transform: scale(1); }
+    33% { transform: scale(1.1); }
+    66% { transform: scale(1); }
+}
+
+

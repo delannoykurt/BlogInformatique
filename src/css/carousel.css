@@ -1,0 +1,27 @@
+.main {
+
+}
+
+
+.carousel {
+    height: 400px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    justify-self: stretch;
+    align-items: center;
+    align-content: space-around;
+
+    overflow: hidden;
+}
+
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+
+
+.slide {
+
+}
