@@ -1,3 +1,6 @@
+@import url("profil.css");
+
+
 .header {
     background-color: rgba(30, 31, 34, 1);
     margin-bottom: 100px;
@@ -117,7 +120,20 @@
 
 */
 
+/*********************************************/
+/*********************************************/
+/*********************************************/
+
+/**
+    Section pour gérer l'icon du profil
+    au sein de la navbar.
+    La gestion du profil lui-même ce fait via
+    la classe profil-icon -> profil.css
+    **/
+
 .profil-user {
+    padding-top: 20px;
+    text-align: center;
     width: 60px;
     height: 60px;
     border: solid 3px #FFF;
@@ -224,5 +240,3 @@ a:hover {
     33% { transform: scale(1.1); }
     66% { transform: scale(1); }
 }
-
-
