@@ -1,11 +1,9 @@
 @import url("profil.css");
 
-
 .header {
     background-color: rgba(30, 31, 34, 1);
     margin-bottom: 100px;
 }
-
 
 .navigation-bar {
     height: 60px;
@@ -15,11 +13,11 @@
 }
 
 .navigation-bar:hover {
-     height: 60px;
-     display: flex;
-     align-items: center;
-     justify-content: space-around;
- }
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .link a {
     color: rgba(227, 147, 157, 1);
@@ -29,17 +27,15 @@
 
 .link:hover {
     transform: scale(1.5);
-    transition: .5s;
+    transition: 0.5s;
     color: rgba(227, 147, 157, 1);
 }
-
 
 .link a {
     color: rgba(227, 147, 157, 1);
     text-decoration: none;
     font-size: 1.5em;
 }
-
 
 /********************************************/
 /********************************************/
@@ -136,12 +132,10 @@
     text-align: center;
     width: 60px;
     height: 60px;
-    border: solid 3px #FFF;
+    border: solid 3px #fff;
     opacity: 0.8;
     animation: viewprofil 5s ease-in-out infinite alternate;
 }
-
-
 
 /*********************************************/
 /*********************************************/
@@ -153,7 +147,7 @@
     0% {
         transform: rotate(0deg) scale(0.9);
         border-radius: 10%;
-        border-color: #FFF;
+        border-color: #fff;
         opacity: 0.7;
     }
     10% {
@@ -222,10 +216,12 @@ a:hover {
 
 a {
     display: inline-block; /* Nécessaire pour l'animation */
-    color: #007BFF;
+    color: #007bff;
     text-decoration: none;
     font-size: 16px;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition:
+        transform 0.3s ease-in-out,
+        color 0.3s ease-in-out;
     animation: pulse-links 3s infinite;
 }
 
@@ -236,7 +232,13 @@ a:hover {
 }
 
 @keyframes pulse-links {
-    0% { transform: scale(1); }
-    33% { transform: scale(1.1); }
-    66% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(1.1);
+    }
+    66% {
+        transform: scale(1);
+    }
 }
