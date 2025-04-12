@@ -1,61 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/animation-menu.js"></script>
-    <title>Mon super blog pour passionnés d'informatique</title>
-</head>
-<body>
-<div class="header">
-   <nav class="navigation-bar">
-       <div class="Archives link">
-           <a href="archives.html">Archives</a>
-       </div>
-       <div class="Articles link">
-           <a href="articles.html">Articles</a> <!-- ici les article sont tous présent au sein du même document --->
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/carousel.css" />
+        <script src="js/animation-menu.js"></script>
+        <script src="js/carousel.js"></script>
+        <title>Mon super blog pour passionnés d'informatique</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navigation-bar">
+                <div class="Archives link">
+                    <a href="archives.html">Archives</a>
+                </div>
+                <div class="Articles link">
+                    <a href="articles.html">Articles</a>
+                    <!-- ici les article sont tous présent au sein du même document --->
+                </div>
+                <div class="Corrections link">
+                    <a href="corrections.html">Corrections</a>
+                </div>
+                <!-- ici se trouve la zone pour le profil -->
+                <div class="profil-user profil">
+                    <a href="profil.html">👱🏻‍♂️</a>
+                </div>
+                <p id="timer">10</p>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="carousel">
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
+                <img
+                    class="slide"
+                    src="https://www.placehold.co/150x150"
+                    alt="fake image"
+                />
 
-       </div>
-       <div class="Corrections link">
-           <a href="corrections.html">Corrections</a>
-       </div>
-       <!-- ici se trouve la zone pour le profil -->
-       <div class="profil-user profil">
-           <a href="profil.html">👱🏻‍♂️</a>
-       </div>
-       <p id="timer">10</p>
-   </nav>
-</div>
-<div class="main">
-    <div class="carousel">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-        <img class="slide" src="https://www.placehold.co/150x150" alt="fake image">
-    </div>
-    <div class="articles">
-        <h1>Voici nos articles</h1>
-        <article>
-            <h2>titre de l'article</h2>
-            <!--ici ajouter une date, source, auteur-->
-            <img src="https://www.placehold.co/150x150" alt="fake image for article">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloremque, in nam quas recusandae veniam voluptate? Adipisci animi dolorem earum expedita, incidunt ipsam mollitia natus pariatur quidem repudiandae voluptatem, voluptatibus.</p>
-            <button>lire ...</button>
-        </article>
-    </div>
-    <div class="sidebar">
-        <!-- ajouter du contenu ... -->
-    </div>
-</div>
-</body>
+                <!--Buttons for action carousel next and prev direction -->
+                <button class="carousel-btn prev">←</button>
+                <button class="carousel-btn next">→</button>
+            </div>
+            <div class="articles">
+                <h1>Voici nos articles</h1>
+                <article>
+                    <h2>titre de l'article</h2>
+                    <!--ici ajouter une date, source, auteur-->
+                    <img
+                        src="https://www.placehold.co/150x150"
+                        alt="fake image for article"
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Accusamus doloremque, in nam quas recusandae
+                        veniam voluptate? Adipisci animi dolorem earum expedita,
+                        incidunt ipsam mollitia natus pariatur quidem
+                        repudiandae voluptatem, voluptatibus.
+                    </p>
+                    <button>lire ...</button>
+                </article>
+            </div>
+            <div class="sidebar">
+                <!-- ajouter du contenu ... -->
+            </div>
+        </div>
+    </body>
 </html>

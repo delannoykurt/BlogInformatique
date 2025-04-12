@@ -1,27 +1,39 @@
-.main {
-
-}
-
-
 .carousel {
-    height: 400px;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    justify-self: stretch;
-    align-items: center;
-    align-content: space-around;
-
+    position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
-
-
-
-/********************************************/
-/********************************************/
-/********************************************/
-
 
 .slide {
+    width: 100%;
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+}
 
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
